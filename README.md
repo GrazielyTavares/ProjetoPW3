@@ -21,4 +21,4 @@ Projeto de front-end sendo executado em NODEJS com uso de da "view engine" EJS.T
 </a>
 
 ##Orientador 
-(https://github.com/cristianocorrea3)
+<sub>Cristiano Correa de Moraes</sub>](https://github.com/cristianocorrea3)
