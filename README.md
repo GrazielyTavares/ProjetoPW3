@@ -20,5 +20,6 @@ Projeto de front-end sendo executado em NODEJS com uso de da "view engine" EJS.T
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width=100 />
 </a>
 
-##Orientador 
-<sub>Cristiano Correa de Moraes</sub>](https://github.com/cristianocorrea3)
+### Orientador 
+
+[<br><sub>Cristiano Correa de Moraes</sub>](https://github.com/cristianocorrea3)
