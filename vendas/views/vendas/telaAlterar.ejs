@@ -1,0 +1,65 @@
+<%- include('../partes/header.ejs') %>
+
+<body>
+
+    <div class="container">
+
+        <%- include('../partes/menu.ejs') %>
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>Editar Cadastro</h3>
+                <%= cadastro.data.nomeDono %>
+                <%= cadastro.data.cpf %>
+            </div>
+
+            <div class="card-body">
+
+                <form action="/editarCategoria" method="post">
+
+                    <label for="nomeDono"></label>
+                    <input 
+                    class="form-control" type="text" 
+                    name="nomeDono" id="nomeDono"
+                    value="<%= cadastro.data.nomeDono %>">
+
+                    <label for="cpf"></label>
+                    <input 
+                    type="hidden" 
+                    name="cpf" 
+                    value="<%= cadastro.data.cpf %>">
+
+                    <label for="endereco"></label>
+                    <input 
+                    type="hidden" 
+                    name="endereco" 
+                    value="<%= cadastro.data.endereco %>">
+
+                    <label for="telefone"></label>
+                    <input 
+                    type="hidden" 
+                    name="telefone" 
+                    value="<%= cadastro.data.telefone %>">
+
+                    <label for="nomeAnimal"></label>
+                    <input 
+                    type="hidden" 
+                    name="nomeAnimal" 
+                    value="<%= cadastro.data.nomeAnimal %>">
+
+                    <button class="btn btn-success mt-2">EDITAR</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<%- include('../partes/footer.ejs') %>
+
+</html>

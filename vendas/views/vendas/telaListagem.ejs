@@ -1,0 +1,56 @@
+<%- include('../partes/header.ejs') %>
+
+<body> 
+    
+    <div class="container">
+
+        <%- include('../partes/menu.ejs') %>
+
+        <div class="card">
+            <div class="card-header">Listagem de vendas</div>
+        </div>
+        
+        <%= vendas.data %>
+
+        <%        
+            vendas.data.forEach(venda=>{
+        %>
+
+            <div class="card mt-2 p-1">
+
+                <div class="card-body">
+                    <%= venda.nomeDono %>
+                </div>
+
+                <div class="card-body">
+                    <%= venda.cpf %>
+                </div>
+
+                <div class="card-body">
+                    <%= venda.endereco %>
+                </div>
+
+                <div class="card-body">
+                    <%= venda.telefone %>
+                </div>
+
+                <div class="card-body">
+                    <%= venda.nomeAnimal %>
+                </div>
+
+                <div class="btn-group mr-2">
+                    <a href="/telaAlterar/<%= venda.cpf %>" class="btn btn-success btn-sm mr-2 ml-2">EDITAR</a>
+                    <a href="#" class="btn btn-danger btn-sm mr-2 ml-2">EXCLUIR</a>
+                </div>
+
+            </div>
+        
+        <% }) %>
+
+    </div>
+
+</body>
+
+<%- include('../partes/footer.ejs') %>
+
+</html>
