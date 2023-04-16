@@ -10,43 +10,37 @@
 
             <div class="card-header">
                 <h3>Editar Cadastro</h3>
-                <%= cadastro.data.nomeDono %>
-                <%= cadastro.data.cpf %>
             </div>
 
             <div class="card-body">
 
-                <form action="/editarCategoria" method="post">
+                <form action="http://localhost:3000/venda/editarCategoria" method="post">
 
                     <label for="nomeDono"></label>
-                    <input 
-                    class="form-control" type="text" 
-                    name="nomeDono" id="nomeDono"
-                    value="<%= cadastro.data.nomeDono %>">
+                    <input class="form-control"
+                    type="text" name="nomeDono" 
+                    id="nomeDono" value="<%= venda.nomeDono %>"
+                    placeholder="NOME DO DONO">
 
                     <label for="cpf"></label>
-                    <input 
-                    type="hidden" 
-                    name="cpf" 
-                    value="<%= cadastro.data.cpf %>">
+                    <input type="hidden" 
+                    name="cpf" value="<%= venda.cpf %>"
+                    placeholder="CPF">
 
                     <label for="endereco"></label>
-                    <input 
-                    type="hidden" 
-                    name="endereco" 
-                    value="<%= cadastro.data.endereco %>">
+                    <input type="text" 
+                    name="endereco" value="<%= venda.endereco %>"
+                    placeholder="ENDEREÇO">
 
                     <label for="telefone"></label>
-                    <input 
-                    type="hidden" 
-                    name="telefone" 
-                    value="<%= cadastro.data.telefone %>">
+                    <input type="hidden" 
+                    name="telefone" value="<%= venda.telefone %>"
+                    placeholder="TELEFONE">
 
                     <label for="nomeAnimal"></label>
-                    <input 
-                    type="hidden" 
-                    name="nomeAnimal" 
-                    value="<%= cadastro.data.nomeAnimal %>">
+                    <input type="hidden" 
+                    name="nomeAnimal" value="<%= venda.nomeAnimal %>"
+                    placeholder="NOME DO ANIMAL">
 
                     <button class="btn btn-success mt-2">EDITAR</button>
 
