@@ -34,9 +34,9 @@ app.get('/vendas/telaListagem', (req,res) =>{
 })
 
 //alterar
-app.get('/telaAlterar/:cpf', (req, res) => {
+app.get('/vendas/telaAlterar/:cpf', (req, res) => {
     let {cpf} = req.params;
-    urlListarCadastroID = `http://localhost:3000/ListagemDadosID/:cpf`
+    urlListarCadastroID = `http://localhost:3000/venda/ListagemDadosID/:cpf`
 
     axios.get(urlListarCadastroID)
         .then ((response) => {
@@ -45,7 +45,7 @@ app.get('/telaAlterar/:cpf', (req, res) => {
         })
 });
 
-app.post('/telaAlterar', (req, res) =>{
+app.post('/vendas/telaAlterar', (req, res) =>{
 
     let urlEditar = 'http://localhost:3000/AtualizarDados';
 
@@ -57,9 +57,9 @@ app.post('/telaAlterar', (req, res) =>{
 })
 
 //deletar
-app.delete('telaDeletar', (req, res) => {
+app.delete('', (req, res) => {
 
-    let urlDeletar = 'http://localhost:3000//DeletarDados/:cpf'
+    let urlDeletar = 'http://localhost:3000/DeletarDados/:cpf'
 
 })
 
