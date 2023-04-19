@@ -14,33 +14,20 @@
 
             <div class="card-body">
 
-                <form action="http://localhost:3000/venda/editarCategoria" method="post">
+                <form action="http://localhost:3000/venda/AtualizarDados/:cpf" method="put">
+
 
                     <label for="nomeDono"></label>
-                    <input class="form-control"
+
+                    <input class="form-control" 
                     type="text" name="nomeDono" 
-                    id="nomeDono" value="<%= venda.nomeDono %>"
+                    id="nomeDono"
                     placeholder="NOME DO DONO">
 
                     <label for="cpf"></label>
-                    <input type="hidden" 
-                    name="cpf" value="<%= venda.cpf %>"
+                    <input type="number" 
+                    name="cpf" 
                     placeholder="CPF">
-
-                    <label for="endereco"></label>
-                    <input type="text" 
-                    name="endereco" value="<%= venda.endereco %>"
-                    placeholder="ENDEREÇO">
-
-                    <label for="telefone"></label>
-                    <input type="hidden" 
-                    name="telefone" value="<%= venda.telefone %>"
-                    placeholder="TELEFONE">
-
-                    <label for="nomeAnimal"></label>
-                    <input type="hidden" 
-                    name="nomeAnimal" value="<%= venda.nomeAnimal %>"
-                    placeholder="NOME DO ANIMAL">
 
                     <button class="btn btn-success mt-2">EDITAR</button>
 
